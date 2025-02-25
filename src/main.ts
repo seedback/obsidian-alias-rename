@@ -205,7 +205,9 @@ export default class LinkWithAliasPlugin extends Plugin {
 			this.editorCursorListener.fireOnCursorChange(editor, (cursorPosition) => {
 				if (!cursorPosition) {
 					//user is editing another file now. Add missing alias from origin file
-					this.addMissingAlias(lastLink.cacheLink, lastLink.file?.path);
+					if (lastLink.makeAlias) {
+						this.addMissingAlias(lastLink.cacheLink, lastLink.file?.path);
+					}
 					return false;
 				}
 				return this.handleChangeOnLastLink(editor, lastLink);
