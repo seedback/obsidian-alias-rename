@@ -18,27 +18,27 @@ User selects some text and runs the command "Create link with alias". The comman
 
 A) ... user can just select a value from the autocompletion popup, press Enter and link and alias are created.
 
-![Run command, press Enter, done](use-case1.gif)
+![Run command, press Enter, done](media/use-case1.gif)
 
 B) ... user can edit the link target then select a value from the autocompletion popup, press Enter and link and alias are created. Note that link text is kept.
 
-![Run command, edit link, select in autocompletion, press Enter, done](use-case5.gif)
+![Run command, edit link, select in autocompletion, press Enter, done](media/use-case5.gif)
 
 C) ... user can enter name of new note, let cursor leave the link, then the new note is created automatically with link display text as alias.
 
-![Run command, edit link, leave the link, done](use-case6.gif)
+![Run command, edit link, leave the link, done](media/use-case6.gif)
 
 ## Add alias for existing link
 
 User puts cursor into existing link and runs command "Create link with alias". The command creates the target document, if it doesn't exist, and adds link display text as alias into front matter of the target note
 
-![Run command in link, done](use-case2.gif)
+![Run command in link, done](media/use-case2.gif)
 
 ## Make completely new link
 
 User puts cursor into text and runs command "Create link with alias". It creates link brackets and opens autocompletion popup for entering of link target name. After user types in part of the target name or alias and selects it by enter, the link is created. If there is no display text and user moves back into link and enters one, then system detects it and after cursor leaves the brackets or user closes the window, the link display text is added as alias into front matter of the target note. While this use case is supported, it is usually faster to write text without link first and then **Make link on existing text**.
 
-![Run command, select target, press Enter, move cursor back, write alias, leave the link, done](use-case3.gif)
+![Run command, select target, press Enter, move cursor back, write alias, leave the link, done](media/use-case3.gif)
 
 ## Toggle link display text
 
@@ -59,7 +59,7 @@ B) or the link target is kept empty so you can immediatelly type in the target n
 -   The aliases are sorted from longest to shortest, so the Obsidian backlinks are detected correctly
 -   The link autocompletion popup is the standard one provided by Obsidian. It sometime replaces the link text automaticaly, but it isn't wanted in this use case. The action "Create link with alias" will keep the link text exactly the same like it was before.
 
-![Run command, press Enter, done](use-case4.gif)
+![Run command, press Enter, done](media/use-case4.gif)
 
 # About me
 
